@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent">
+
+<RelativeLayout 
+    android:nextFocusDown="@+id/editTextNombre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.itsa.equipo4.misviajes.NewTravel" >
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:textSize="@dimen/activity_fontsize_forms" >
+        
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editTextOrigen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextNombre"
+        android:ems="10"
+        android:hint="Ciudad de origen"
+        android:textSize="@dimen/activity_fontsize_forms" >
+
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editTextDestino"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextOrigen"
+        android:ems="10"
+        android:hint="Ciudad destino"
+        android:textSize="@dimen/activity_fontsize_forms" >
+
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editTextFechaInicial"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextDestino"
+        android:ems="10"
+        android:hint="Fecha Inicial (dd/mm/aaaa)"
+        android:inputType="date"
+        android:textSize="@dimen/activity_fontsize_forms" >
+    
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editTextFechaFinal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextFechaInicial"
+        android:ems="10"
+        android:hint="Fecha Final (dd/mm/aaaa)"
+        android:inputType="date"
+        android:textSize="@dimen/activity_fontsize_forms" >
+
+    </EditText>
+    
+   <EditText
+        android:id="@+id/editTextTransporte"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextFechaFinal"
+        android:ems="10"
+        android:hint="Medio de transporte"
+        android:textSize="@dimen/activity_fontsize_forms" >
+
+    </EditText>
+    
+   <EditText
+        android:id="@+id/editTextCosto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextTransporte"
+        android:ems="10"
+        android:hint="Costo"
+        android:numeric="decimal"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/activity_fontsize_forms" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonAddTravel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCosto"
+        android:layout_marginTop="10dp"
+        android:text="@string/button_addtravel" />
+    
+    <Button
+        android:id="@+id/buttonUpdTravel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCosto"
+        android:layout_marginTop="10dp"
+        android:text="@string/button_updtravel" />
+
+</RelativeLayout>
+</ScrollView>
